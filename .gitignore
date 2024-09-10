@@ -1,0 +1,33 @@
+# Ignorar directorios del núcleo de WordPress
+wp-admin/
+wp-includes/
+
+# Ignorar subidas y caché
+wp-content/uploads/
+wp-content/cache/
+
+# Ignorar todos los plugins y temas excepto el que estás desarrollando
+wp-content/plugins/*
+!wp-content/plugins/tu-plugin-personalizado/
+wp-content/themes/*
+!wp-content/themes/tu-tema-personalizado/
+
+# Ignorar archivos de configuración y seguridad
+wp-config.php
+.htaccess
+.env
+
+# Ignorar archivos del sistema
+*.log
+*.sql
+*.tar.gz
+*.zip
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas de dependencia y archivos relacionados
+node_modules/
+vendor/
+composer.lock
+package-lock.json
